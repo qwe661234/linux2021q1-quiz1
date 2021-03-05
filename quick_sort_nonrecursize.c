@@ -9,10 +9,9 @@ int main(int argc, char **argv) {
     while (count--) {
         list = list_make_node_t(list, rand() % 1024);
     }
-        
-
+    
     list_display(list);
-    quicksort(&list);
+    quicksort_nonrecursive(&list, 20);
     list_display(list);
 
     if (!list_is_ordered(list))

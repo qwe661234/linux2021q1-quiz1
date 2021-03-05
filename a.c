@@ -29,8 +29,3 @@ int lfg(int mod){
     }
     return out % mod;
 }
-int main(){
-    int a;
-    a = lfg(100);
-    printf("%d\n", a);
-}
