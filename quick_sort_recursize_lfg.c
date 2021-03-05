@@ -18,6 +18,10 @@ int main(int argc, char **argv) {
         op = random() % 4;
         j = random() % 100;
         k = random() % 100;
+        while (!(j < k)) {
+            j = random() % 100;
+            k = random() % 100;
+        }
         switch(op){
             case 0:
                 out = f[99 - j] + f[99 -k];
